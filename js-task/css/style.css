@@ -1,0 +1,19 @@
+#div1 {
+  display: none; /* Hide div1 initially */
+}
+#div2 {
+  margin-top: 50px; /* Uygun bir üst boşluk ayarlayın */
+  text-align: center; /* İçerik ortalanacak şekilde ayarlayın */
+}
+.char {
+  display: inline-block;
+  font-size: 24px;
+  opacity: 0; /* Initially hide characters */
+  animation: moveChar linear 1s forwards;
+}
+@keyframes moveChar {
+  to {
+      transform: translateY(-50px); /* Move characters upwards */
+      opacity: 1; /* Fade in characters */
+  }
+}
